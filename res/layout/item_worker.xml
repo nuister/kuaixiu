@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/ui_margin_b"
+    android:background="#fff"
+    >
+
+    <ImageView
+        android:id="@+id/worker_avatar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/pic_loading_avatar"
+        android:layout_marginRight="@dimen/ui_margin_b"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/worker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="王师傅"
+        android:textColor="@color/ui_font_c"
+        android:textSize="@dimen/ui_font_b"/>
+
+</LinearLayout>

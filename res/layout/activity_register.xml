@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar__" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="@dimen/ui_margin_d">
+
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#0000"
+                android:hint="请输入手机号码"
+                android:inputType="phone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ui_divider_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_code"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:hint="请输入验证码"
+                    android:inputType="phone" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/ui_divider_bg" />
+
+                <TextView
+                    android:id="@+id/click_code"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/ui_margin_b"
+                    android:text="获取验证码"
+                    android:textColor="#29B31D"
+                    android:textSize="@dimen/ui_font_c" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ui_divider_bg" />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#0000"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/register_delegate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:id="@+id/register_delegate_selected"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_lvgou" />
+
+            <TextView
+                android:id="@+id/register_delegate_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/register_delegate_selected"
+                android:text="阅读并同意"
+                android:textColor="#919191"
+                android:textSize="@dimen/ui_font_a" />
+
+            <TextView
+                android:id="@+id/click_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/register_delegate_agree"
+                android:text="软件许可及服务协议"
+                android:textColor="#24a9e1"
+                android:textSize="@dimen/ui_font_a" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/click_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:background="#f69e05"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_c" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar__"/>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"
+        android:background="@color/ui_divider_bg"
+        />
+
+    <com.litesuits.android.widget.pullrefresh.PullToRefreshListView
+        android:id="@+id/pull_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/ui_divider_bg"
+        android:layout_weight="1"
+        >
+    </com.litesuits.android.widget.pullrefresh.PullToRefreshListView>
+</LinearLayout>

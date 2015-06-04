@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/ui_bg_white">
+
+
+    <LinearLayout
+        android:id="@+id/container_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ui_margin_d">
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ui_font_c"
+            android:textColor="@color/ui_font_c" />
+
+        <TextView
+            android:id="@+id/label_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ui_font_c"
+            android:textColor="@color/ui_font_c" />
+
+
+        <LinearLayout
+            android:id="@+id/container_worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/ui_bg_grey"
+            android:padding="@dimen/ui_margin_d"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/label_worker_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ui_font_c"
+                android:textColor="@color/ui_font_c" />
+
+            <TextView
+                android:id="@+id/label_worker_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ui_font_c"
+                android:textColor="@color/ui_font_c" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/label_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/ui_font_c"
+            android:textColor="@color/ui_font_c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/ui_margin_d">
+
+            <TextView
+                android:id="@+id/label_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ui_font_c"
+                android:textColor="@color/ui_font_green" />
+
+
+            <TextView
+                android:id="@+id/click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ui_bg_grey"
+                android:padding="@dimen/ui_margin_b"
+                android:textSize="@dimen/ui_font_c"
+                android:textColor="@color/ui_font_c"
+                android:text="取消"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"
+        android:background="@color/ui_divider_bg"
+         />
+</LinearLayout>

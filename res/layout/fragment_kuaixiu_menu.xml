@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/menu_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F4F4F4">
+
+    <RelativeLayout
+        android:id="@+id/menu_avatar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:padding="3.0dip"
+            android:src="@drawable/pic_loading_avatar"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/arrow_right"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/menu_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_avatar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/ui_font_a"
+        android:textSize="@dimen/ui_font_c"/>
+
+    <ListView
+        android:id="@+id/list_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#0000"
+        android:divider="@color/ui_divider_bg"
+        android:dividerHeight="0.5dp"
+        android:layout_below="@id/menu_username">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/list_menu"
+        android:background="@color/ui_divider_bg"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ui_bg_grey">#f4f4f4</color>
+    <color name="ui_divider_bg">#e5e5e5</color>
+    <color name="ui_bg_white">#ffffff</color>
+    <color name="loading_animation">#75d1ba</color>
+
+    <!--font-->
+    <color name="ui_font_a">#484848</color>
+    <color name="ui_font_b">#545454</color>
+    <color name="ui_font_c">#646464</color>
+    <color name="ui_font_d">#848484</color>
+    <color name="ui_font_e">#a9a9a9</color>
+    <color name="ui_font_f">#b4b4b4</color>
+    <color name="ui_font_g">#ffffff</color>
+    <color name="ui_font_green">#19bc28</color>
+    <!--font-->
+
+    <color name="ui_tencent_weibo">#8bc3f7</color>
+    <color name="ui_wechat">#30ca34</color>
+    <color name="ui_qq">#00a0e9</color>
+    <color name="ui_qzone">#1b9cd5</color>
+    <color name="ui_weibo">#e7745a</color>
+    <color name="ui_wechat_moments">#f6b757</color>
+</resources>

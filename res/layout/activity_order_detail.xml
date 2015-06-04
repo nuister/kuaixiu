@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:gsh="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar__"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#434444"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.litesuits.android.widget.RoundCornerImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="@dimen/ui_margin_d"
+                        android:src="@drawable/pic_loading_avatar"
+                        gsh:roundHeight="30dp"
+                        gsh:roundWidth="30dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/label_worker_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/ui_margin_a"
+                        android:text="工作人员：王二小\n联系方式：18012345678"
+                        android:textColor="@color/ui_font_g"
+                        android:textSize="@dimen/ui_font_b"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/label_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ui_bg_grey"
+                    android:padding="@dimen/ui_margin_d"
+                    android:text="电视维修"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_c"/>
+
+                <TextView
+                    android:id="@+id/label_order_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ui_bg_white"
+                    android:padding="@dimen/ui_margin_d"
+                    android:text="订单号：31231243423"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_b"/>
+
+                <TextView
+                    android:id="@+id/label_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ui_margin_d"
+                    android:background="@color/ui_bg_grey"
+                    android:text="下单时间："
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_b"/>
+
+                <TextView
+                    android:id="@+id/label_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ui_bg_white"
+                    android:padding="@dimen/ui_margin_d"
+                    android:text="地址：成都"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_b"/>
+
+                <TextView
+                    android:id="@+id/label_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ui_bg_grey"
+                    android:padding="@dimen/ui_margin_d"
+                    android:text="订单状态：取消"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+
+
+                <TextView
+                    android:id="@+id/label_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ui_margin_d"
+                    android:background="@color/ui_bg_white"
+                    android:text="￥100.00"
+                    android:textColor="@color/ui_font_green"
+                    android:textSize="@dimen/ui_font_c"/>
+
+
+                <LinearLayout
+                    android:id="@+id/images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/ui_margin_d"
+                    android:orientation="vertical"
+                    ></LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/container_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/ui_margin_d"
+
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/click_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ui_size_item_height_normal"
+                android:layout_marginRight="@dimen/ui_margin_d"
+                android:layout_weight="1"
+                android:background="#39B44A"
+                android:gravity="center"
+                android:text="phone"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_c"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/click_action"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ui_size_item_height_normal"
+                android:layout_weight="1"
+                android:background="#39B44A"
+                android:gravity="center"
+                android:text="start"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_c"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

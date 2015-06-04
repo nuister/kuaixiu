@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">陌邻快修_copy</string>
+
+    <!--pull to refresh-->
+    <string name="pull_to_refresh_header_hint_normal">下拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">正在加载中</string>
+    <string name="pull_to_refresh_header_last_time">最后更新时间 :</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="pull_to_refresh_no_more_data">已经到底啦</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <!--pull to refresh-->
+
+    <string name="app_sina_weibo">新浪微博</string>
+    <string name="app_tencent_weibo">腾讯微博</string>
+    <string name="app_qq">QQ</string>
+    <string name="app_qzone">QQ空间</string>
+    <string name="app_wechat">微信</string>
+    <string name="label_share_wechat_circle">微信朋友圈</string>
+    <string name="share_test">我在%3$s发现了“%2$s”，很不错，推荐您看看!%1$s</string>
+</resources>

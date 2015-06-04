@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar__"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:inputType="phone"
+            android:hint="手机号码"
+            android:layout_marginBottom="@dimen/ui_margin_d"
+            />
+
+        <TextView
+            android:id="@+id/click_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击获取验证码"
+            android:padding="@dimen/ui_margin_b"
+            android:background="#d5d5d5"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_c"
+            />
+
+        <EditText
+            android:id="@+id/input_code"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:inputType="phone"
+            android:layout_marginBottom="@dimen/ui_margin_d"
+            android:layout_margin="@dimen/ui_margin_d"
+            android:hint="验证码"
+            />
+
+        <TextView
+            android:id="@+id/click_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证"
+            android:padding="@dimen/ui_margin_b"
+            android:background="#d5d5d5"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_c"
+            />
+    </LinearLayout>
+</LinearLayout>

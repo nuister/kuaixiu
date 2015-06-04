@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:gsh="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/ui_bg_white">
+
+
+    <LinearLayout
+        android:id="@+id/container_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ui_margin_d">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/label_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ui_font_c"
+                android:text="电视维修"
+                android:textColor="@color/ui_font_c"/>
+
+
+            <TextView
+                android:id="@+id/label_order_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ui_font_b"
+                android:text="订单号：31231243423"
+                android:textColor="@color/ui_font_c"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:layout_marginBottom="@dimen/ui_margin_d"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ui_divider_bg"
+                android:visibility="visible"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <com.litesuits.android.widget.RoundCornerImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/pic_loading_avatar"
+                    gsh:roundHeight="30dp"
+                    gsh:roundWidth="30dp"
+                    android:layout_marginRight="@dimen/ui_margin_d"
+                    android:layout_marginTop="@dimen/ui_margin_d"
+                    android:layout_marginBottom="@dimen/ui_margin_d"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/label_worker_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ui_font_b"
+                    android:lineSpacingExtra="@dimen/ui_margin_a"
+                    android:text="工作人员：王二小\n联系方式：18012345678"
+                    android:textColor="@color/ui_font_c"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ui_divider_bg"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/label_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下单时间："
+            android:textSize="@dimen/ui_font_b"
+            android:textColor="@color/ui_font_c"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/ui_margin_d">
+
+            <TextView
+                android:id="@+id/label_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ui_font_c"
+                android:text="￥100.00"
+                android:textColor="@color/ui_font_green"/>
+
+
+            <TextView
+                android:id="@+id/label_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ui_margin_b"
+                android:textSize="@dimen/ui_font_c"
+                android:textColor="@color/ui_font_c"
+                android:background="@drawable/order_state"
+                android:text="取消"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"
+        android:background="@color/ui_divider_bg"
+        />
+</LinearLayout>

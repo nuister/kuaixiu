@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/ui_size_item_height_normal"
+              android:background="@color/ui_bg_white"
+              android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/ui_font_a"
+        android:textSize="@dimen/ui_font_c"/>
+
+    <View
+        android:id="@+id/title_bar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_size_one_dp"
+        android:background="@color/ui_divider_bg"></View>
+
+</LinearLayout>
+

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/ui_bg_white">
+
+
+            <RelativeLayout
+                android:id="@+id/menu"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="false"
+                    android:padding="3.0dip"
+                    android:src="@drawable/pic_loading_avatar"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/ui_font_a"
+                android:text="快修"
+                android:textSize="@dimen/ui_font_c"/>
+
+            <!-- right image button -->
+            <!--android:background="@drawable/ui_button_action_bg"-->
+            <RelativeLayout
+                android:id="@+id/notify"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/title_notify_img"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/notification"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/title_bar_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_one_dp"
+            android:background="@color/ui_divider_bg"></View>
+    </LinearLayout>
+
+
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/ui_bg_white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/main_req_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/type_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/type_a_image"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/type"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/type_a_image"
+                    android:background="#70D6D7D6"/>
+
+                <TextView
+                    android:id="@+id/type_a_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/type_a_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="开锁换锁"
+                    android:textColor="@color/type_text"
+                    android:textSize="@dimen/ui_font_a"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/type_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/type_b_image"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/type"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/type_b_image"
+                    android:background="#70D6D7D6"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/type_b_image"
+                    android:background="#70D6D7D6"/>
+
+                <TextView
+                    android:id="@+id/type_b_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/type_b_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="家电维修"
+                    android:textColor="@color/type_text"
+                    android:textSize="@dimen/ui_font_a"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/type_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/type_c_image"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/type"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/type_c_image"
+                    android:background="#70D6D7D6"/>
+
+                <TextView
+                    android:id="@+id/type_c_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/type_c_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="家庭小修"
+                    android:textColor="@color/type_text"
+                    android:textSize="@dimen/ui_font_a"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/click_post"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_margin="@dimen/ui_margin_d"
+            android:background="#39B44A"
+            android:gravity="center"
+            android:text="发布维修需求"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_c"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

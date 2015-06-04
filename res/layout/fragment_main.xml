@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/map"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/ui_bg_white"
+        >
+
+        <LinearLayout
+            android:id="@+id/main_req_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/main_req_type_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/main_req_type_lock_btn"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/type"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/main_req_type_lock_btn"
+                    android:background="#70D6D7D6"/>
+
+                <TextView
+                    android:id="@+id/main_req_type_lock_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_req_type_lock_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="开锁换锁"
+                    android:textColor="@color/type_text"
+                    android:textSize="@dimen/ui_font_a"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_req_type_appliance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/main_req_type_appliance_btn"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/type"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/main_req_type_appliance_btn"
+                    android:background="#70D6D7D6"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/main_req_type_appliance_btn"
+                    android:background="#70D6D7D6"/>
+
+                <TextView
+                    android:id="@+id/main_req_type_appliance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_req_type_appliance_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="家电维修"
+                    android:textColor="@color/type_text"
+                    android:textSize="@dimen/ui_font_a"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_req_type_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/main_req_type_family_btn"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/type"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/main_req_type_family_btn"
+                    android:background="#70D6D7D6"/>
+
+                <TextView
+                    android:id="@+id/main_req_type_family_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_req_type_family_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="家庭小修"
+                    android:textColor="@color/type_text"
+                    android:textSize="@dimen/ui_font_a"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/click_post"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_margin="@dimen/ui_margin_d"
+            android:background="#39B44A"
+            android:gravity="center"
+            android:text="发布维修需求"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_c"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
